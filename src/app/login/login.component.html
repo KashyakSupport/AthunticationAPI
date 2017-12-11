@@ -1,0 +1,112 @@
+
+<div ng-controller="formctrl" ng-app="myApp">
+  
+  <mat-card>
+  <div class="container">
+  <div id="login">
+      <div class="signup-screen">
+          <div class="mat-card-title mat-color-primary mat-shadow-6dp" >LOGIN</div>
+          <div class="divider"></div>
+        
+      <mat-card-content>
+          <form class="user" method="post" name="register" action="/login" novalidate>
+
+            <div class="input-field col s6">
+              <mat-form-field class="example-full-width">
+                <span matPrefix></span>
+                <input name="Username" matInput placeholder="User Name" [(ngModel)]="login.Username">
+                <mat-icon matSuffix>email</mat-icon>
+              </mat-form-field>
+            </div>
+            <div class="input-field col s6">
+              <mat-form-field class="example-full-width">
+                <span matPrefix></span>
+                <input name="password" type="password" matInput placeholder="Password" required [(ngModel)]="login.password">
+                <mat-icon matSuffix>https</mat-icon>
+              </mat-form-field>
+              </div>
+
+
+
+
+           <!--    <div class="input-field col s6">
+                <mat-form-field class="example-full-width">
+                  <span matPrefix></span>
+                  <input name="email"  matInput placeholder="Email" required [(ngModel)]="user.email">
+                  <mat-icon matSuffix>https</mat-icon>
+                </mat-form-field>
+                </div>
+             <div>
+            <mat-card-actions>
+              <button mat-raised-button>Login</button>
+              
+              <button mat-button>Register</button>
+            </mat-card-actions>
+          </div> -->
+            <div class="mat-card-actions ">
+                <button  mat-raised-button type="submit" (click)="logins()">Register</button>
+                  </div>
+            </form>
+          </mat-card-content>
+          </div>
+        </div>
+    </div>
+  </mat-card> 
+  </div>
+  
+  
+  <!--
+  <mat-card>
+      <div class="mat-card-title mat-color-primary mat-shadow-6dp" >Register</div>
+      <mat-card-content>
+          <div class="input-field col s6">  <input matInput placeholder="First Name" [(ngModel)]="user.fname"><br /> </div>
+            <div class="input-field col s6">   <input matInput placeholder="Last Name" [(ngModel)]="user.lname"><br /> </div>
+              <div class="input-field col s6">  <input matInput  placeholder="User Name" [(ngModel)]="user.email"><br /></div>
+                <div class="input-field col s6">   <input matInput  placeholder="Password" [(ngModel)]="user.password"><br /></div>
+      </mat-card-content>
+      <mat-card-actions>
+          <button mat-button (click)="save()">Register</button>
+      </mat-card-actions>
+  </mat-card>
+  -->
+<!--
+<div class="mat-layout" ng-controller="formctrl" ng-app="myApp">
+<mat-card>
+
+        <div class="mat-card-title mat-color-primary mat-shadow-12dp" >Sign In
+        <mat-card-content>
+                <form class="sup" method="post" action="/login" >
+                        <div class="input-field col s6">
+                            <mat-form-field class="example-full-width">
+                              <span matPrefix></span>
+                              <input name="Username" matInput placeholder="User Name" [(ngModel)]="sup.Username">
+                              <mat-icon matSuffix>person</mat-icon>
+                            </mat-form-field>
+                        </div> 
+                        <div class="input-field col s6">
+                                <mat-form-field class="example-full-width">
+                                  <span matPrefix></span>
+                                  <input ng-model="uname" name="password" type="password" matInput placeholder="Password" [(ngModel)]="sup.password" required>
+                                  <mat-icon matSuffix>https</mat-icon>
+                                </mat-form-field>
+                               </div>
+                               <div class="mat-card-actions ">
+                                    <button mat-button><a routerLink="">Forgot password?</a></button>
+                                    <button  mat-raised-button type="submit" (click)="dial">LOGIN</button>
+                                     </div>
+
+
+                 </form>
+
+
+
+
+        </mat-card-content>
+
+    </div>
+
+
+</mat-card>
+</div>
+
+-->
